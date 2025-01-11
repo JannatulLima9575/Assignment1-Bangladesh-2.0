@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", serif;
+  background: rgb(245, 245, 245);
+}
+
+/* styles.css */
+/* Banner section  */
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* navbar section  */
+.nav {
+  position: relative;
+  width: 1600px;
+  height: 100px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background-color: #f9f9f9;
+}
+
+.nav h1 {
+  color: rgb(14, 14, 14);
+  font-family: Fira Sans;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.sign-in {
+  padding: 11px 21px;
+  background-color: transparent;
+  color: rgb(0, 106, 80);
+  border: 1px solid #006d39;
+  border-radius: 6px;
+  font-family: Fira Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  cursor: pointer;
+}
+.sign-in:hover {
+  background-color: #006d39;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+/* Banner Section  */
+.banner {
+  position: relative;
+  width: 1600px;
+  height: 560px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 64px;
+  padding: 80px 100px 80px 100px;
+  margin: 20px auto;
+  border-radius: 24px;
+  background: rgb(198, 228, 214);
+}
+
+/* left site */
+.content {
+  position: static;
+  width: 622px;
+  height: 326px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24;
+  padding: 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 64px;
+  object-fit: cover;
+  background: rgb(198, 228, 214);
+}
+
+.content h2 {
+  color: rgba(14, 14, 14, 0.5);
+  font-family: Fira Sans;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.content p {
+  color: rgb(14, 14, 14);
+  font-family: Fira Sans;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: rgb(0, 106, 80);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #e60303de;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+/* right side */
+.image-container {
+  position: relative;
+  width: 474.03px;
+  height: 400px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 64px;
+  background: linear-gradient(
+    173.71deg,
+    rgb(60, 145, 106) 19.058%,
+    rgb(29, 74, 53) 113.924%
+  );
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  background: rgb(198, 228, 214);
+}
+
+/* section one  */
+.container .One {
+  display: flex;
+}
+.container .section-one {
+  color: rgb(14, 14, 14);
+  font-family: Fira Sans;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.One .cart {
+  box-sizing: border-box;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+}
+
+.One .cart img {
+  position: absolute;
+  width: 62px;
+  height: 62px;
+}
+
+.cart h3 {
+  color: rgba(14, 14, 14, 0.8);
+  font-family: Fira Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.cart p {
+  color: rgba(14, 14, 14, 0.7);
+font-family: Fira Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+/* Table Section  */
+.container {
+  position: relative;
+  width: 1600px;
+  height: 560px;
+  display: flex;
+  left: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24;
+  padding: 0px;
+  flex: none;
+  flex-grow: 0;
+  margin: 80px 0px;
+  transform: translateX(-50%);
+  position: relative;
+  order: 2;
+  align-self: stretch;
+}
+
+.container h1 {
+  color: rgb(14, 14, 14);
+  font-family: Fira Sans;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.opinion-table .head {
+  box-sizing: border-box;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  background: rgb(198, 228, 214);
+}
+
+.container .opinion-table {
+  border-radius: ;
+}
+
+.container .table {
+  width: 150%;
+  border-collapse: collapse;
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+}
+.container .opinion-table thead {
+  box-sizing: border-box;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  background: rgb(198, 228, 214);
+}
+.opinion-table th,
+.opinion-table td {
+  text-align: left;
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+.opinion-table th {
+  background-color: #d4edda;
+  color: #333;
+}
+
+.opinion-table td {
+  background-color: #fff;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
