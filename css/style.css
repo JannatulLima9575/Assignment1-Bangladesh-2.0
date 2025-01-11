@@ -183,20 +183,17 @@
 .futures {
   position: relative;
   width: 1600px;
-  height: 765px;
+  height: 800px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   justify-items: center;
   gap: 80;
   padding: 0px;
   flex: none;
-  order: 1;
-  align-self: stretch;
   flex-grow: 0;
-  margin: 80px 0px;
   padding: 80px 100px 80px 100px;
-  margin: 20px auto;
+  margin: 30px auto;
 }
 .future-title {
   color: rgb(14, 14, 14);
@@ -204,6 +201,7 @@
   font-weight: 700;
   line-height: 48px;
   letter-spacing: 0%;
+  margin: 24px 0px;
   text-align: center;
 }
 .future-description {
@@ -212,6 +210,7 @@
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0%;
+  margin: 2px 0px;
   text-align: center;
 }
 .future-container {
@@ -223,13 +222,6 @@
   height: 100%;
   display: flex;
   margin: 24px 0px;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px;
-  border: 0;
-  margin: 32px 0 32px;
-  gap: 24px; */
 }
 
 .box-1 {
@@ -385,14 +377,21 @@
 .Quote {
   border: 1px solid rgba(14, 14, 14, 0.15);
   border-radius: 16px;
-  background: rgb(255, 255, 255); 
+  background: rgb(255, 255, 255);
   margin-top: 32px;
-  height: 256px;
+  width: 1600px;
+  height: 300px;
   background-image: url(../assets/quote-bg.png);
   background-repeat: no-repeat;
   background-position: 20px 20px;
   background-size: 70px 70px;
   box-shadow: 0 4px 6px #d5d6d8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .quote-title {
   font-size: 20px;
@@ -412,42 +411,117 @@
   padding: 0px 13px 0px 13px;
 }
 
-/* end future section */
 /* Table Section  */
+.table {
+  /* Frame 2087325622 */
+  position: static;
+  width: 1280px;
+  height: 481px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24;
+  padding: 0px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 80px 0px;
+}
+
+h1 {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.opinion-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.opinion-table th,
+.opinion-table td {
+  text-align: left;
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+.opinion-table th {
+  background-color: #d4edda;
+  color: #333;
+}
+
+.opinion-table td {
+  background-color: #fff;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Resent News Section */
 .news {
-  width: 1320px;
+  width: 1600px;
   height: 1240px;
   margin: 0px auto;
-  margin-top: 70px;
-}
-.news-description {
-  margin-top: 30px;
-  color: #0e0e0e;
-  font-size: 15px;
-  font-weight: 300;
+  margin-top: 80px;
+  background-color: brown;
 }
 .news-title {
-  color: #0e0e0e;
+  color: rgb(14, 14, 14);
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: left;
 }
+.news-description {
+  color: rgba(14, 14, 14, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 30px;
+}
+
 .news-1 {
+  position: relative;
+  width: 1280px;
+  height: 402px;
   display: flex;
   flex-direction: row;
-  height: 350px;
   justify-content: space-around;
-  margin-top: 32px;
   align-items: center;
+  margin-top: 32px;
+  padding: 48px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 24px 0px;
   text-align: justify;
-  box-shadow: 4px 4px 8px gray;
   border-radius: 20px;
 }
 .news-item-title {
-  color: #0e0e0e;
-  font-family: 20px;
-  font-weight: bold;
+  color: rgba(14, 14, 14, 0.8);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 .news-item-img {
+  border-radius: 24px;
+  background: url(image);
   margin-top: 12px;
 }
 .news-item-time {
@@ -474,7 +548,9 @@
   margin-top: 24px;
 }
 .news-btn:hover {
-  background-color: rgb(237, 154, 148);
+  background-color: red;
+  color: #fff;
+  transition: 0.3s ease-in-out;
 }
 .news-img {
   width: 70%;
@@ -486,8 +562,9 @@
   object-fit: cover;
 }
 
-.Donate {
-  max-width: 1320px;
+/* Donate Section  */
+.donate {
+  max-width: 1400px;
   width: 100%;
   height: 100%;
   margin: 0px auto;
@@ -495,14 +572,23 @@
   margin-top: 80px;
 }
 .donate-title {
+  color: rgb(14, 14, 14);
   font-size: 40px;
-  font-weight: bold;
-  color: #0e0e0e;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-top: 24px;
 }
 .donate-description {
-  margin-top: 24px;
+  color: rgba(14, 14, 14, 0.7);
+  font-family: Fira Sans;
   font-size: 16px;
   font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 24px;
 }
 .donate-item {
   display: flex;
@@ -510,39 +596,171 @@
   justify-content: space-between;
   padding: 30px 60px;
   margin-top: 32px;
+  padding-bottom: 32px;
 }
 .donate-item-list {
-  border: 2px solid gray;
+  border: 1px solid rgba(14, 14, 14, 0.15);
   padding: 40px 40px;
   border-radius: 20px;
   transition: background-color 0.3 ease;
 }
 .donate-item-list:hover {
-  background-color: #c6e4d6;
+  background: rgb(0, 106, 80);
+  color: #fff;
+  transition: 0.3s ease-in-out;
 }
 .donate-item-list h4 {
   font-size: 40px;
   font-weight: bold;
 }
 
-input {
-  max-width: 1320px;
-  width: 75%;
+.donate input {
+  background: rgb(245, 245, 245);
+  width: 1200px;
   height: 64px;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 1px;
+  color: rgba(14, 14, 14, 0.3);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
   text-align: center;
 }
 .donate-btn {
-  padding: 15px 30px 15px 30px;
+  border: 1px solid rgba(14, 14, 14, 0.1);
   border-radius: 8px;
-  background-color: #09a15c;
-  color: #fff;
-  font-size: 18;
-  font-weight: 400;
+  background: rgb(0, 106, 80);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0%;
+  padding: 17px 34px 17px 34px;
   cursor: pointer;
   border: none;
-  transition: background-color 0.3 ease;
-  margin-top: 30px;
+  margin-top: 32px;
 }
 .donate-btn:hover {
-  transform: translateY(-10px);
+  background-color: red;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+/* News Letter Section  */
+.newsletter {
+  margin: 0px auto;
+  width: 1600px;
+  height: 400px;
+  background-color: #c6e4d6;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 70px;
+}
+.newsletter_container {
+  width: 1280px;
+  height: 395px;
+  padding: 80px 100px 80px 100px;
+  gap: 64;
+}
+.newsletter-title {
+  color: rgb(14, 14, 14);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 16px 0px;
+  gap: 16;
+}
+.newsletter-description {
+  color: rgba(14, 14, 14, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.newsletter_container input {
+  border-radius: 10px 0px 0px 10px;
+  background: rgb(255, 255, 255);
+  width: 600px;
+  height: 44.5px;
+  padding: 30px 7px;
+  border: none;
+  outline: none;
+}
+.subscribe_btn {
+  border-radius: 0px 10px 10px 0px;
+  background: rgb(0, 106, 80);
+  margin-left: -5px;
+  padding: 21.5px 30px;
+  border: none;
+  color: #fff;
+  margin-bottom: 10px;
+  outline: none;
+  cursor: pointer;
+}
+.subscribe_btn:hover {
+  background-color: #fa1717;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.newsletter-description {
+  color: rgba(14, 14, 14, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.spam {
+  color: rgba(14, 14, 14, 0.7);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 24px;
+}
+
+/* Footer Section  */
+footer {
+  width: 100%;
+  height: 226px;
+  margin-top: 80px;
+  background: rgb(245, 245, 245);
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+.info-des {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 2;
+  color: #000000;
+  margin-top: 20px;
+}
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 30px;
+}
+.hor {
+  margin: 32px 0px;
+  border: 1px solid rgba(14, 14, 14, 0.1);
 }
