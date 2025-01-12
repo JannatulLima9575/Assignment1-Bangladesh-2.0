@@ -146,7 +146,7 @@
 .pillar-card {
   border: 1px solid rgba(14, 14, 14, 0.15);
   border-radius: 16px;
-  background: rgb(198, 228, 214);
+  background: rgb(245, 245, 245);
   padding: 30px;
   margin-top: 32px;
   flex: none;
@@ -155,7 +155,7 @@
 }
 .pillar-card:hover {
   background-color: #006d39;
-  color: #fff;
+  color: #ffff;
   transition: 0.3s ease-in-out;
 }
 .pillar-card h4 {
@@ -188,11 +188,9 @@
   flex-direction: column;
   justify-content: center;
   justify-items: center;
-  gap: 80;
-  padding: 0px;
+  padding-top: 80px;
   flex: none;
   flex-grow: 0;
-  padding: 80px 100px 80px 100px;
   margin: 30px auto;
 }
 .future-title {
@@ -233,9 +231,6 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-  /* border-radius: 16px;
-  background: rgba(84, 144, 245, 0.2);
-  padding: 32px; */
 }
 .box-2 {
   border: 1px solid rgba(14, 14, 14, 0.15);
@@ -246,9 +241,6 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-  /* padding: 32px;
-  background-color: #c6e4d6;
-  border-radius: 16px; */
 }
 .box-3 {
   border: 1px solid rgba(14, 14, 14, 0.15);
@@ -259,9 +251,6 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-  /* padding: 24px;
-  background-color: #f7ebcf;
-  border-radius: 16px; */
 }
 .box-4 {
   border: 1px solid rgba(14, 14, 14, 0.15);
@@ -272,9 +261,6 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-  /* padding: 24px;
-  background: rgb(245, 245, 245);
-  border-radius: 16px; */
 }
 .box-1-title {
   font-size: 20px;
@@ -375,96 +361,50 @@
   background-color: rgb(22, 17, 21);
 }
 .Quote {
+  position: relative;
+  box-sizing: border-box;
+  flex-direction: column;
+  flex: 1;
   border: 1px solid rgba(14, 14, 14, 0.15);
   border-radius: 16px;
   background: rgb(255, 255, 255);
-  margin-top: 32px;
-  width: 1600px;
-  height: 300px;
-  background-image: url(../assets/quote-bg.png);
-  background-repeat: no-repeat;
-  background-position: 20px 20px;
-  background-size: 70px 70px;
-  box-shadow: 0 4px 6px #d5d6d8;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+  width: 100%;
 }
-.quote-title {
-  font-size: 20px;
-  font-weight: 300;
-  color: #0e0e0e;
-  padding: 0px 13px 0px 13px;
+.Quote:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 .quote-description {
-  margin-top: 48px;
+  color: rgba(14, 14, 14, 0.8);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 48px 24px;
   padding: 10px 24px 0px 12px;
-  margin-bottom: 15px;
+}
+.quote-title {
+  color: rgba(14, 14, 14, 0.8);
+  font-family: Fira Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 4px 24px;
+  padding: 0px 24px 0px 13px;
 }
 .quote-sub-title {
-  margin-top: 12px;
+  color: rgba(14, 14, 14, 0.6);
+  font-family: Fira Sans;
   font-size: 16px;
-  font-weight: 300;
-  padding: 0px 13px 0px 13px;
-}
-
-/* Table Section  */
-.table {
-  /* Frame 2087325622 */
-  position: static;
-  width: 1280px;
-  height: 481px;
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 24;
-  padding: 0px;
-
-  /* Inside Auto Layout */
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  margin: 80px 0px;
-}
-
-h1 {
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
   text-align: left;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.opinion-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.opinion-table th,
-.opinion-table td {
-  text-align: left;
-  padding: 15px;
-  border: 1px solid #ddd;
-}
-
-.opinion-table th {
-  background-color: #d4edda;
-  color: #333;
-}
-
-.opinion-table td {
-  background-color: #fff;
-}
-
-select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 14px;
+  margin: 4px 24px;
+  margin-top: 12px;
 }
 
 /* Resent News Section */
@@ -475,6 +415,7 @@ select {
   margin-top: 80px;
   padding: 0;
 }
+
 .news-title {
   color: rgb(14, 14, 14);
   font-size: 40px;
@@ -507,6 +448,9 @@ select {
   height: auto;
   background: rgb(245, 245, 245);
   border: 1px solid rgba(14, 14, 14, 0.1);
+}
+.news-1:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 .news-left {
   flex: 1;
